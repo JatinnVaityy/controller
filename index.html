@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forklift Game Controller</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Forklift Controller</h1>
+  <canvas id="gameCanvas"></canvas>
+  
+  <!-- Controls -->
+  <div id="controls">
+    <!-- Movement controls inside a circle -->
+    <div class="circle-container">
+      <button id="up" onmousedown="moveUp()" onmouseup="stopMove()">↑</button>
+      <div>
+        <button id="left" onmousedown="moveLeft()" onmouseup="stopMove()">←</button>
+        <button id="right" onmousedown="moveRight()" onmouseup="stopMove()">→</button>
+      </div>
+      <button id="down" onmousedown="moveDown()" onmouseup="stopMove()">↓</button>
+    </div>
+
+    <!-- Turn controls below the circle -->
+    <div class="turn-buttons">
+      <button id="turnLeft" onmousedown="turnLeft()">Turn Left</button>
+      <button id="turnRight" onmousedown="turnRight()">Turn Right</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
